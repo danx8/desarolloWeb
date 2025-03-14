@@ -7,6 +7,7 @@ import tacos from "./tacos.jpg";
 import logo from "./logo.svg";
 import fondo from "./fondo.jpg";
 import loginImage from "./loginImage.jpg";
+import ProductCarousel from "./ProductCarousel";
 
 function Detalle() {
     const { palabra } = useParams(); 
@@ -18,7 +19,7 @@ function Detalle() {
             </nav>
 
             <img src={mantel} className="fullscreen-image" alt="mantel" />
-            
+            <ProductCarousel/>
             <div className="image-container">
                 <div>
                     <img src={tacos} alt="menu" style={{ width: "250px", height: "250px" }} />
